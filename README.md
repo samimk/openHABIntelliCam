@@ -15,3 +15,5 @@ Reports are sent as JSON with single field:
 4. Add the newly created item to Basic UI or HAB Panel.
 5. Copy rule file intellicam.rules to /etc/openhab2/rules
 6. Configure notification settings in intellicam.rules.
+
+If notifications are not necessary, steps 5. and 6. can be omitted.
