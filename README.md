@@ -14,4 +14,4 @@ Reports are sent as JSON with single field:
 3. Add a new channel to MQTT Thing in openHAB Paper UI and create new item.
 4. Add the newly created item to Basic UI or HAB Panel.
 5. Copy rule file intellicam.rules to /etc/openhab2/rules
-6. Configure notification settings in intellicam.rule.
+6. Configure notification settings in intellicam.rules.
