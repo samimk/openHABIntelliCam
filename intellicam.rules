@@ -1,0 +1,31 @@
+//##################################################
+//## openHABIntelliCam
+//##################################################
+//#
+//# Jetson Nano-based security camera, which
+//# reports by MQTT when person detected
+//#
+//##################################################
+//## Author: Samim Konjicija
+//## Copyright: Copyright 2021, openHABIntelliCam
+//## Version: 0.0.1
+//## Maintainer: Samim Konjicija
+//## Email: skonjicija@etf.unsa.ba
+//##################################################
+
+// Insert item name and to_address
+
+rule "Intellicam received ON"
+when
+        Item <item name> changed from CLOSED to OPEN
+then
+        sendNotification("to_address","Person's presence detected!")
+end
+
+rule "Intellicam received OFF"
+when
+        Item <item name> changed from OPEN to CLOSED
+then
+        sendNotification("to_address","Person not present!")
+end
+
